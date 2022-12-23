@@ -224,7 +224,7 @@ const quiz = [
   },
 ];
 
-const render = ({question,answers }) => {
+const render = ({question,answers}) => {
   answersContainer.innerHTML = '';
   document.getElementById("question").innerHTML = question;
 
@@ -269,7 +269,6 @@ const nextStep = () => {
   stepIndex++;
   selectedObj = quiz.find(obj => obj.id === stepIndex);
   render(selectedObj);
-  console.log(stepIndex)
 }
 
 const getValueFromButton = () => {
